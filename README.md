@@ -40,3 +40,5 @@ v2.2: Bugfixes and optimizations.
 v1.0-release-candidate
 - Bug fixes and optimizations
 - Prep for release
+- [Website](https://brackets-coder.github.io/BlockifyVR/) & [Documentation](https://brackets-coder.github.io/BlockifyVR/documentation/introduction)
+- Sample Project
