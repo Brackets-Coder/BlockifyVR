@@ -17,3 +17,26 @@ If you encounter any issues, please use the [issues](https://github.com/Brackets
 You can get help, show off your code, ask a question, suggest a new feature, and more on the [discussions](https://github.com/Brackets-Coder/BlockifyVR/discussions) page.
 
 [More resources (demo projects, documentation, sample code, etc.) coming soon.](https://brackets-coder.github.io/BlockifyVR/)
+
+### Upcoming release plan:
+
+~~v1.0-pre-alpha: Earliest version. Minimal functionality, proof-of-concept version. Not available here. Not open source.~~
+
+~~v1.0-alpha: work-in-progress. Expect significant bugs and poor performance. Should not be used.~~
+
+~~v1.0-beta: Cross-platform compatibility, major bug fixes, and optimizations have been added.~~
+
+**v1.0-release-candidate: Current Version Feature complete. Meets standards of full release with minimal issues. During this release period, preparations for full release include gallery thumbnail, sample project, documentation, etc.**
+
+v1.0: First release. Feature complete and meets all standards of great performance, very few issues, cross-platform compatibility, and intuitive design. 
+
+v1.5: Bugfixes and optimizations. Possibly a small feature or change, such as controller vibrations.
+
+v2.0: Big update. Most likely something like hand tracking support for some platforms. Also will include some minor bugfixes and optimizations. 
+
+v2.2: Bugfixes and optimizations.
+
+### Active Development
+v1.0-release-candidate
+- Bug fixes and optimizations
+- Prep for release
