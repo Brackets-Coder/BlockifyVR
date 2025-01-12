@@ -16,4 +16,4 @@ Any version below v1.0-release-candidate (old commits) should not be used.
 If you encounter any issues, please use the [issues](https://github.com/Brackets-Coder/BlockifyVR/issues) page.
 You can get help, show off your code, ask a question, suggest a new feature, and more on the [discussions](https://github.com/Brackets-Coder/BlockifyVR/discussions) page.
 
-More resources (demo projects, documentation, sample code, etc.) coming soon.
+[More resources (demo projects, documentation, sample code, etc.) coming soon.](https://brackets-coder.github.io/BlockifyVR/)
