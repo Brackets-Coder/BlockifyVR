@@ -1,0 +1,370 @@
+/* This Stylesheet overrides the necessary Bootstrap classes to display our website's theme and branding properly */
+
+h1, h2, h3, h4, h5, h6 {
+  color: darkgreen;
+}
+
+p {
+  color: green; 
+}
+a {
+  color: green;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, .75) !important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out
+}
+
+.nav-link.active {
+  color: rgba(255, 255, 255, 1) !important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 1) !important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out
+}
+
+/* Restyling of all buttons */
+.btn-primary {
+  background-color: green !important;
+  border-color: green !important;
+  color: white !important;
+  border-radius: 5px !important;
+  transition: all 0.5s !important;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:focus {
+    background-color: darkgreen !important;
+    border-color: darkgreen !important;
+    color: e6e6e6 !important;
+    border-radius: 10px !important;
+    transition: all 0.5s !important;
+    outline: none;
+    box-shadow: none!important;
+}
+.btn-danger {
+  border-radius: 5px !important;
+  transition: all 0.5s !important;
+}
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:focus,
+.btn-danger:active:focus {
+    border-radius: 10px !important;
+    transition: all 0.5s !important;
+    outline: none;
+    box-shadow: none !important;
+}
+.btn-outline-primary {
+  background-color: transparent !important;
+  border-color: green !important;
+  color: green !important;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:active:focus {
+  background-color: green !important;
+  border-color: green !important;
+  color: white !important;
+  border-radius: 10px;
+  transition: all 0.5s;
+  box-shadow: none !important; /* Removes a styling issue that involves a blue focus ring that clashes with the green theme and branding colors*/
+}
+/*Button styling for the "get started" button on the index page*/
+.btn-get-started {
+  background-color: transparent !important;
+  border-color: green !important;
+  color: green !important;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.btn-get-started:hover,
+.btn-get-started:active,
+.btn-get-started:focus,
+.btn-get-started:active:focus {
+  background-color: green !important;
+  border-color: green !important;
+  color: white !important;
+  border-radius: 8px 15px;
+  transition: all 0.5s;
+  box-shadow: none !important; /* Removes a styling issue that involves a blue focus ring that clashes with the green theme and branding colors*/
+}
+/*=-=-=-=-=--=-==-=-=-=-=-=-==---=-==-==-==-=*/
+
+
+.btn-light {
+  background-color: white !important;
+  border-color: white !important;
+  color: green !important;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.btn-light:hover,
+.btn-light:active,
+.btn-light:focus,
+.btn-light:active:focus {
+    background-color: white !important;
+    border-color: white !important;
+    color: green !important;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.btn-outline-light {
+  background-color: transparent !important;
+  border-color: white !important;
+  color: white !important;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.btn-outline-light:hover,
+.btn-outline-light:active,
+.btn-outline-light:focus,
+.btn-outline-light:active:focus {
+    background-color: white !important;
+    border-color: white !important;
+    color: green !important;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.btn-account-dropdown {
+  background-color: white;
+  color: green;
+  height: 100% !important;
+  width: auto;
+}
+
+/*Dropdown menu restylings*/
+.dropdown-menu { 
+  background-color: white !important;
+  border-color: green !important;
+  color: green !important;
+}
+
+.dropdown-menu>li>a:hover {
+  background: #e6e6e6;
+  color: darkgreen !important;
+}
+
+.dropdown-menu>li>a {
+  color: green !important;
+}
+
+.file-upload-form {
+  border-style: dashed; 
+  border-color: green;
+  border-width: 3px;
+  border-radius: 7.5px; 
+  padding: 15px;
+  width: 400px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.account-dropdown {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  color: green;
+  border: none;
+  border-radius: none;
+  transition: all 0.5s;
+}
+
+.account-dropdown:hover,
+.account-dropdown:active,
+.account-dropdown:focus,
+.account-dropdown:active:focus {
+    background-color: transparent !important;
+    border: none;
+    color: darkgreen !important;
+    border-radius: none;
+    transition: all 0.5s;
+}
+
+/*Change the color of the glow around the form inputs*/
+.form-control {
+  border-color: green;
+  border-width: 2px;
+}
+.form-control:focus {
+  border-color: green;
+  box-shadow:0 0 0 .25rem rgba(0, 128, 0, .25)
+}
+
+.form-select {
+  border-color: green !important;
+  border-width: 2px !important;
+  color: darkgreen;
+}
+.form-select:focus {
+  border-color: green !important;
+  box-shadow:0 0 0 .25rem rgba(0, 128, 0, .25) !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  -webkit-text-fill-color: darkgreen !important;
+  -webkit-box-shadow: 0 0 50px rgba(255, 255, 255, 0) inset !important;
+  background-color: transparent !important;
+  background-clip: text;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .2) !important;
+}
+
+/* "Zoom" class for zooming the logo upon hover in the index page, as a small fun little tidbit for no reason whatsoever */
+.zoom {
+  transition: transform .2s; /* Animation */
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+::placeholder {
+  color: green;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: green;
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link:active,
+.nav-pills .nav-link:focus,
+.nav-pills .nav-link:active:focus {
+  background-color: #e6e6e6 !important;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #cde3c8 !important;
+  color: darkgreen !important; 
+}
+.nav-pills .nav-link.active:hover {
+  background-color: #b2d4aa !important;
+}
+.nav-pills .nav-item {
+  padding-bottom: 5px !important;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.preformatted {
+  white-space: pre-wrap;
+}
+
+.alert-success {
+  background-color:#cde3c8;
+  border: 1.5px solid #a3cc99;
+}
+
+.badge.bg-success {
+  background-color: green !important;
+}
+
+.footer-light {
+  padding-top: 50px;
+}
+.footer-light div {
+  background-color: white;
+  color: green;
+  height: auto;
+  border-top: 2px solid green;
+}
+.footer-light div p,
+.footer-light div a {
+  color: green;
+}
+
+
+.footer-dark {
+  padding-top: auto;
+}
+.footer-dark div {
+  background-color: green;
+  color: white;
+  height: auto;
+}
+.footer-dark div p,
+.footer-dark div a {
+  color: white;
+}
+
+.border-success {
+  border-color: green !important;
+}
+.bold {
+  font-weight: bold;
+}
+
+
+@media (max-width: 1400px) {
+  .col-sm-6 {
+      padding-top: 10px;
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .col-sm-2 {
+      padding-top: 10px;
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .col-sm-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+.form-check-input:checked {
+  background-color: green;
+  border-color: green;
+}
+.form-check-input,
+.form-check-input:focus {
+  border-color: green;
+}
+.form-check .form-check-input {
+  float: none;
+}
+
+.card { 
+  transform: scale(1);
+  transition: all 0.5s
+}
+
+.card:hover {
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, .3) !important;
+  transform: scale(1.02);
+  transition: all 0.5s
+}
