@@ -26,7 +26,7 @@ You can get help, show off your code, ask a question, suggest a new feature, and
 
 ~~v1.0-beta: Cross-platform compatibility, major bug fixes, and optimizations have been added.~~
 
-**v1.0-release-candidate: Current Version Feature complete. Meets standards of full release with minimal issues. During this release period, preparations for full release include gallery thumbnail, sample project, documentation, etc.**
+**v1.0-release-candidate: Feature complete. Meets standards of full release with minimal issues. During this release period, preparations for full release include gallery thumbnail, sample project, documentation, etc.**
 
 v1.0: First release. Feature complete and meets all standards of great performance, very few issues, cross-platform compatibility, and intuitive design. 
 
