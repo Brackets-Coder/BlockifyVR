@@ -10,7 +10,7 @@ Things it supports:
 - ✅ All the blocks you need to create your VR experiences
 - .... and more!
 
-Note that pre-release versions (v1.0-release-candidate) may be unstable. This version can be downloaded [here](https://github.com/Brackets-Coder/BlockifyVR/releases/tag/v1.0-release-candidate).
+Note that pre-release versions (v1.0-release-candidate) may be unstable. This version can be downloaded [here](https://github.com/Brackets-Coder/BlockifyVR/releases/).
 Any version below v1.0-release-candidate (old commits) should not be used.
 
 If you encounter any issues, please use the [issues](https://github.com/Brackets-Coder/BlockifyVR/issues) page.
