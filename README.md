@@ -10,9 +10,6 @@ Things it supports:
 - ✅ All the blocks you need to create your VR experiences
 - .... and more!
 
-Note that pre-release versions (v1.0-release-candidate) may be unstable. This version can be downloaded [here](https://github.com/Brackets-Coder/BlockifyVR/releases/).
-Any version below v1.0-release-candidate (old commits) should not be used.
-
 If you encounter any issues, please use the [issues](https://github.com/Brackets-Coder/BlockifyVR/issues) page.
 You can get help, show off your code, ask a question, suggest a new feature, and more on the [discussions](https://github.com/Brackets-Coder/BlockifyVR/discussions) page.
 
@@ -38,7 +35,7 @@ v2.2: Bugfixes and optimizations.
 
 ### Active Development
 v1.0-release-candidate
-- Bug fixes and optimizations
+- ~~Bug fixes and optimizations~~
 - Prep for release
 - [Website](https://brackets-coder.github.io/BlockifyVR/) & [Documentation](https://brackets-coder.github.io/BlockifyVR/documentation/introduction)
 - Sample Project
