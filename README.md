@@ -35,14 +35,13 @@ v2.2: Bugfixes and optimizations.
 
 ### Active Development
 v1.0-release-candidate
+- Mainly just writing documentation now
 - Bug fixes and optimizations
-- Prep for release
 - [Website](https://brackets-coder.github.io/BlockifyVR/) & [Documentation](https://brackets-coder.github.io/BlockifyVR/documentation/introduction)
-- Sample Project
 
 ### Game Ideas
 Some ideas for _possible_ (not guaranteed) games that may or may not come in the future:
-- Beatsaber
+- Beatsaber (probably going to be one of the easiest ones to make)
 - A 8 Ball Pool and Dart Board game
 - A Trench Run game based on either Star Wars or Top Gun: Maverick
 - A Battlefront II-inspired Star Wars Multiplayer FPS game
