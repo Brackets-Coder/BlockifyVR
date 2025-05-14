@@ -366,5 +366,9 @@ input:-webkit-autofill:active  {
 .card:hover {
   box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, .3) !important;
   transform: scale(1.02);
-  transition: all 0.5s
+  transition: all 0.5s;
+}
+
+a:has(> .card) {
+  text-decoration: none;
 }
