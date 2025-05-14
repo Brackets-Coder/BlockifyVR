@@ -62,10 +62,10 @@
           const gallery = document.getElementById("gallery");
           data.forEach(element => {
             let card = 
-            `<div id="${data.indexOf(element)}" class="col project">
+            `<div class="col project">
               <a href="projects?q=${data.indexOf(element)}">
                 <div class="card" style="width: auto; border-radius: 8px;">
-                  <img src="projects/${element}/thumbnail.png" class="card-img-top" style="padding: 10px; border-radius: 15px">
+                  <img src="projects/${element}thumbnail.png" class="card-img-top" style="padding: 10px; border-radius: 15px">
                   <div class="card-body">
                     <h5 class="card-title text-truncate" style="margin-bottom: 0; color: darkgreen;">${element.slice(element.indexOf("/") + 1, element.lastIndexOf("/"))}</h5>
                   </div>
