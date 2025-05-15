@@ -81,7 +81,7 @@
         const html = `
         <h1>${data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"))}</h1>
         <h5 style="padding-bottom: 25px;">${data[id].slice(0, data[id].indexOf("/"))}</h5>
-        <iframe style="border-radius: 8px; border: none;" src="projects/${data[id]}/index.html"></iframe>`;
+        <iframe style="border-radius: 8px; border: none;" src="projects/${data[id]}index.html"></iframe>`;
         
         document.getElementById("projectContainer").appendChild(document.createRange().createContextualFragment(html));
       }
