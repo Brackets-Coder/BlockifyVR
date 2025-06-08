@@ -51,7 +51,7 @@ The A-frame libary is licensed under the MIT license, which can be found at http
   function scaleDisplayPlane() {
     const plane = document.getElementById("scratchStageVRDisplay");
     let canvas = AScene.renderer.domElement;
-    const fov = THREE.MathUtils.degToRad(document.getElementById("AframeCamera").components.camera.data.fov);
+    const fov = THREE.MathUtils.degToRad(document.getElementById("AframeCamera").components.camera.camera.fov);
     const canvasAspect = screen.width / screen.height;
     const stageAspect = runtime.stageWidth / runtime.stageHeight;
     const distance = 1;
