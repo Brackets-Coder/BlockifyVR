@@ -66,7 +66,7 @@
               <a href="projects?q=${data.indexOf(element)}">
                 <div class="card" style="width: auto; border-radius: 8px;">
                   <img src="projects/${element}thumbnail.png" class="card-img-top" style="padding: 10px; border-radius: 15px">
-                  <div class="card-body">
+                  <div class="card-body" style="padding-top: 6px;">
                     <h5 class="card-title text-truncate" style="margin-bottom: 0; color: darkgreen;">${element.slice(element.indexOf("/") + 1, element.lastIndexOf("/"))}</h5>
                   </div>
                 </div>
@@ -78,11 +78,14 @@
       }
 
       function loadProject(id, data) {
+        const project = `projects/${data[id].slice(0, data[id].indexOf("/"))}/${data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"))}/index.sb3`
         const html = `
         <h1>${data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"))}</h1>
-        <h5 style="padding-bottom: 25px;">${data[id].slice(0, data[id].indexOf("/"))}</h5>
-        <iframe style="border-radius: 8px; border: none;" src="projects/${data[id]}index.html"></iframe>`;
-        
+        <h5 style="margin: 0; padding-bottom: 25px">${data[id].slice(0, data[id].indexOf("/"))}</h5>
+        <div style="padding-bottom: 25px">
+          <a href="${project}" class="btn btn-outline-primary" download>Download Project</a>
+        </div>
+        <iframe style="border-radius: 8px; border: none;" src="https://turbowarp.org/embed/?project_url=https://brackets-coder.github.io/BlockifyVR/${project}"></iframe>`;
         document.getElementById("projectContainer").appendChild(document.createRange().createContextualFragment(html));
       }
 
