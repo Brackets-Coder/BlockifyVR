@@ -79,7 +79,7 @@
 
       function loadProject(id, data) {
         const projectName = data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"));
-        const project = `projects/${data[id].slice(0, data[id].indexOf("/"))}/${projectName}}/${projectName}.sb3`
+        const project = `projects/${data[id].slice(0, data[id].indexOf("/"))}/${projectName}/${projectName}.sb3`
         const html = `
         <h1>${data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"))}</h1>
         <h5 style="margin: 0; padding-bottom: 25px">${data[id].slice(0, data[id].indexOf("/"))}</h5>
