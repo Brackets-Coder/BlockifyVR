@@ -7,6 +7,9 @@
     <base href="/BlockifyVR/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="resources/fontawesome/brands.js"></script>
+    <script defer src="resources/fontawesome/solid.js"></script>
+    <script defer src="resources/fontawesome/fontawesome.js"></script>
     <link rel="icon" type="image/svg+xml" href="resources/favicon.svg">
     <link rel="stylesheet" href="resources/styles.css">
     <script>
@@ -68,7 +71,8 @@
                   <img src="projects/${element}thumbnail.png" class="card-img-top" style="padding: 10px; border-radius: 15px">
                   <div class="card-body" style="padding-top: 6px;">
                     <h5 class="card-title text-truncate" style="margin-bottom: 0; color: darkgreen;">${element.slice(element.indexOf("/") + 1, element.lastIndexOf("/"))}</h5>
-                  </div>
+                    <p style="margin: 0;">${element.slice(0, element.indexOf("/"))}</p>
+                    </div>
                 </div>
               </a>
             </div>`;
@@ -83,8 +87,9 @@
         const html = `
         <h1>${data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"))}</h1>
         <h5 style="margin: 0; padding-bottom: 25px">${data[id].slice(0, data[id].indexOf("/"))}</h5>
-        <div style="padding-bottom: 25px">
-          <a href="${project}" class="btn btn-outline-primary" download>Download Project</a>
+        <div style="padding-bottom: 25px;">
+          <a href="${project}" class="btn btn-outline-primary" download><i style="padding-right: 5px;" class="fa-solid fa-download"></i> Download Project</a>
+          <a href="https://turbowarp.org/editor?project_url=https://brackets-coder.github.io/BlockifyVR/${project}" target="_blank" class="btn btn-outline-primary">See Inside <i style="padding-left: 5px;" class="fa-solid fa-up-right-from-square"></i></a>
         </div>
         <iframe src="https://turbowarp.org/embed?project_url=https://brackets-coder.github.io/BlockifyVR/${project}" allow="xr-spatial-tracking; vr; webxr; accelerometer; gyroscope; magnetometer" allowfullscreen allowvr="yes" frameborder="0"></iframe>`;
         document.getElementById("projectContainer").appendChild(document.createRange().createContextualFragment(html));
