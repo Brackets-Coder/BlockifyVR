@@ -78,14 +78,15 @@
       }
 
       function loadProject(id, data) {
-        const project = `projects/${data[id].slice(0, data[id].indexOf("/"))}/${data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"))}/index`
+        const projectName = data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"));
+        const project = `projects/${data[id].slice(0, data[id].indexOf("/"))}/${projectName}}/${projectName}.sb3`
         const html = `
         <h1>${data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"))}</h1>
         <h5 style="margin: 0; padding-bottom: 25px">${data[id].slice(0, data[id].indexOf("/"))}</h5>
         <div style="padding-bottom: 25px">
-          <a href="${project}.sb3" class="btn btn-outline-primary" download>Download Project</a>
+          <a href="${project}" class="btn btn-outline-primary" download>Download Project</a>
         </div>
-        <iframe src="${project}.html"></iframe>`;
+        <iframe src="https://turbowarp.org/embed?project_url=https://brackets-coder.github.io/BlockifyVR/${project}"></iframe>`;
         document.getElementById("projectContainer").appendChild(document.createRange().createContextualFragment(html));
       }
 
