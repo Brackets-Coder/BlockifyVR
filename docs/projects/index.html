@@ -13,30 +13,6 @@
     <link rel="icon" type="image/svg+xml" href="resources/favicon.svg">
     <link rel="stylesheet" href="resources/styles.css">
     <script>
-      const id = new URLSearchParams(window.location.search).get("q");
-
-      fetch('projects/projects.json')
-      .then(response => response.json())
-      .then(data => {
-        if (id) {
-          if (!data[id]) {
-            window.location.href = '404.html';
-          } else {
-            loadProject(id, data);
-          }
-        } else  {
-          loadGallery(data);
-        }
-      })
-      .catch(error => {
-        console.error('Error fetching project gallery data:', error);
-        const alert = document.createElement("div");
-        alert.innerHTML = `<b>Error Loading Projects</b>`;
-        alert.setAttribute("class", "alert alert-danger");
-        alert.style.color = "darkred";
-        document.getElementById("projectContainer").append(alert);
-      });
-
       function loadGallery(data) { 
         if (data.length == 0) {
           const container = `
@@ -83,16 +59,20 @@
 
       function loadProject(id, data) {
         const projectName = data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"));
-        const project = `projects/${data[id].slice(0, data[id].indexOf("/"))}/${projectName}/${projectName}.sb3`
-        const html = `
-        <h1>${data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"))}</h1>
-        <h5 style="margin: 0; padding-bottom: 25px">${data[id].slice(0, data[id].indexOf("/"))}</h5>
-        <div style="padding-bottom: 25px;">
-          <a href="${project}" class="btn btn-outline-primary" download><i style="padding-right: 5px;" class="fa-solid fa-download"></i> Download Project</a>
-          <a href="https://turbowarp.org/editor?project_url=https://brackets-coder.github.io/BlockifyVR/${project}" target="_blank" class="btn btn-outline-primary">See Inside <i style="padding-left: 5px;" class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-        <iframe src="https://turbowarp.org/embed?project_url=https://brackets-coder.github.io/BlockifyVR/${project}" allow="xr-spatial-tracking; vr; webxr; accelerometer; gyroscope; magnetometer" allowfullscreen allowvr="yes" frameborder="0"></iframe>`;
-        document.getElementById("projectContainer").appendChild(document.createRange().createContextualFragment(html));
+        let project = `projects/${data[id].slice(0, data[id].indexOf("/"))}/${projectName}/${projectName}`;
+        let frameSrc;
+        fetch(project + ".html").then(response => {
+          (response.ok) ? frameSrc = project + ".html" : frameSrc = "https://turbowarp.org/embed?project_url=https://brackets-coder.github.io/BlockifyVR/" + project + ".sb3";
+          const html = `
+            <h1>${data[id].slice(data[id].indexOf("/") + 1, data[id].lastIndexOf("/"))}</h1>
+            <h5 style="margin: 0; padding-bottom: 25px">${data[id].slice(0, data[id].indexOf("/"))}</h5>
+            <div style="padding-bottom: 25px;">
+              <a href="${project}.sb3" class="btn btn-outline-primary" download><i style="padding-right: 5px;" class="fa-solid fa-download"></i> Download Project</a>
+              <a href="https://turbowarp.org/editor?project_url=https://brackets-coder.github.io/BlockifyVR/${project}.sb3" target="_blank" class="btn btn-outline-primary">See Inside <i style="padding-left: 5px;" class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            <iframe src="${frameSrc}" allow="xr-spatial-tracking; vr; webxr; accelerometer; gyroscope; magnetometer" allowfullscreen allowvr="yes" frameborder="0"></iframe>`;
+          document.getElementById("projectContainer").appendChild(document.createRange().createContextualFragment(html));
+        });
       }
 
       function searchProject(value) {
@@ -109,6 +89,30 @@
           }
         });
       }
+
+      const id = new URLSearchParams(window.location.search).get("q");
+
+      fetch('projects/projects.json')
+      .then(response => response.json())
+      .then(data => {
+        if (id) {
+          if (!data[id]) {
+            window.location.href = '404.html';
+          } else {
+            loadProject(id, data);
+          }
+        } else  {
+          loadGallery(data);
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching project gallery data:', error);
+        const alert = document.createElement("div");
+        alert.innerHTML = `<b>Error Loading Projects</b>`;
+        alert.setAttribute("class", "alert alert-danger");
+        alert.style.color = "darkred";
+        document.getElementById("projectContainer").append(alert);
+      });
     </script>
 
     <style>
