@@ -5,7 +5,7 @@ This is a cross-platform virtual reality extension for Turbowarp.
 Things it supports:
 - ✅ Automatic Scratch Stage casting with stereoscopy and adaptive resolution (easy setup)
 - ⚡️ Adaptive 90Hz Refresh Rate
-- ✅ Cross-platform compatibility between Oculus Quest devices, HTC Vive, Windows Mixed Reality, and more
+- ✅ Cross-platform compatibility between Oculus devices, HTC Vive, Windows Mixed Reality, and more
 - ⚡️ Optimized for very little performance overhead (90+ FPS)
 - ✅ All the blocks you need to create your VR experiences
 - .... and more!
