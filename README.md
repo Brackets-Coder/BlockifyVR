@@ -3,7 +3,7 @@
 This is a cross-platform virtual reality extension for Turbowarp.
 
 Things it supports:
-- ✅ Automatic Scratch Stage casting with stereoscopy and adaptive resolution (easy setup)
+- ✅ Easy setup - stage casting & automatic VR initialization
 - ⚡️ Adaptive 90Hz Refresh Rate
 - ✅ Cross-platform compatibility between Oculus devices, HTC Vive, Windows Mixed Reality, and more
 - ⚡️ Optimized for very little performance overhead (90+ FPS)
@@ -15,34 +15,8 @@ You can get help, show off your code, ask a question, suggest a new feature, and
 
 [More resources (demo projects, documentation, sample code, etc.) coming soon.](https://brackets-coder.github.io/BlockifyVR/)
 
-### Upcoming release plan:
-
-~~v1.0-pre-alpha: Earliest version. Minimal functionality, proof-of-concept version. Not available here. Not open source.~~
-
-~~v1.0-alpha: work-in-progress. Expect significant bugs and poor performance. Should not be used.~~
-
-~~v1.0-beta: Cross-platform compatibility, major bug fixes, and optimizations have been added.~~
-
-**v1.0-release-candidate: Feature complete. Meets standards of full release with minimal issues. During this release period, preparations for full release include gallery thumbnail, sample project, documentation, etc.**
-
-v1.0: First release. Feature complete and meets all standards of great performance, very few issues, cross-platform compatibility, and intuitive design. 
-
-v1.5: Bugfixes and optimizations. Possibly a small feature or change, such as controller vibrations.
-
-v2.0: Big update. Most likely something like hand tracking support for some platforms. Also will include some minor bugfixes and optimizations. 
-
-v2.2: Bugfixes and optimizations.
-
 ### Active Development
 v1.0-release-candidate
 - Mainly just writing documentation now
 - Bug fixes and optimizations
 - [Website](https://brackets-coder.github.io/BlockifyVR/) & [Documentation](https://brackets-coder.github.io/BlockifyVR/documentation/introduction)
-
-### Game Ideas
-Some ideas for _possible_ (not guaranteed) games that may or may not come in the future:
-- Beatsaber (probably going to be one of the easiest ones to make)
-- A 8 Ball Pool and Dart Board game
-- A Trench Run game based on either Star Wars or Top Gun: Maverick
-- A Battlefront II-inspired Star Wars Multiplayer FPS game
-- A Harry Potter Multiplayer Quidditch Game
